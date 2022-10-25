@@ -1,0 +1,6 @@
+machine api.gigalixir.com
+	login dane.weber@substantial.com
+	password xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+machine git.gigalixir.com
+	login dane.weber@substantial.com
+	password xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx

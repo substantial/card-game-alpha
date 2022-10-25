@@ -1,5 +1,25 @@
 # CardGameAlpha
 
+## Initial Setup
+
+### Gigalixir setup
+
+Currently running on Dane's free tier Gigalixir account.
+
+#### API Key
+
+`cp docker/gigalixir/.netrc.template docker/gigalixir/.netrc` and replace the password values with Dane's API key.
+
+#### Git Remote
+
+Add the Gigalixir remote git repository with the helper script that executes via a Docker container:
+
+```
+./scripts/gigalixir.sh git:remote card-game-alpha
+```
+
+## Standard Phoenix Instructions
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`

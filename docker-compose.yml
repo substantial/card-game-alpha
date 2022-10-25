@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  gigalixir:
+    build: docker/gigalixir
+    profiles: ["cli"]
+    volumes:
+      - .:/app
+    working_dir: /app
+    entrypoint: gigalixir

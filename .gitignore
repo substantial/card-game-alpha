@@ -32,3 +32,5 @@ card_game_alpha-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Secrets
+docker/gigalixir/.netrc
