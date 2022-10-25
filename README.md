@@ -14,6 +14,18 @@ docker compose up
 
 Run the above and you should be able to access your local dev server at [http://localhost:4000](http://localhost:4000).
 
+### Elixir operations
+
+Use `./scripts/mix.sh` to run `mix` commands via the Phoenix Docker container. For example:
+
+```
+❯ ./scripts/mix.sh phx -v
++ docker compose run phoenix mix phx -v
+[+] Running 1/0
+ ⠿ Container card-game-alpha-db-1  Running                                                                                                                  0.0s
+Phoenix v1.6.14
+```
+
 ## Operations
 
 ### Gigalixir Initial setup
