@@ -5,6 +5,7 @@ services:
     profiles: ["cli"]
     volumes:
       - .:/app
+      - ./docker/gigalixir:/root
     working_dir: /app
     entrypoint: gigalixir
   phoenix:
