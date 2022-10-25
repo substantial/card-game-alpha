@@ -1,6 +1,7 @@
 defmodule CardGameAlphaWeb.Router do
   use CardGameAlphaWeb, :router
 
+  import CardGameAlphaWeb.UserAuth
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
@@ -8,6 +9,7 @@ defmodule CardGameAlphaWeb.Router do
     plug :put_root_layout, {CardGameAlphaWeb.LayoutView, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug :fetch_current_user
   end
 
   pipeline :api do
@@ -18,6 +20,7 @@ defmodule CardGameAlphaWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/session", SessionController, only: [:new, :create, :delete], singleton: true
   end
 
   # Other scopes may use custom stacks.
