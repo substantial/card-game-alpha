@@ -4,7 +4,7 @@
 
 ### Gigalixir setup
 
-Currently running on Dane's free tier Gigalixir account.
+Currently running on Dane's free tier Gigalixir account. Free setup was performed according to [the Gigalixir free tier instructions](https://gigalixir.readthedocs.io/en/latest/getting-started-guide.html#prerequisites).
 
 #### API Key
 
