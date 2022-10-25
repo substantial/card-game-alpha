@@ -26,6 +26,8 @@ Use `./scripts/mix.sh` to run `mix` commands via the Phoenix Docker container. F
 Phoenix v1.6.14
 ```
 
+Use `./scripts/iex.sh` to run IEx (Elixir's interactive shell/REPL), including to run the server within the shell via `./scripts/iex.sh -S mix phx.server`.
+
 ## Operations
 
 ### Gigalixir Initial setup
