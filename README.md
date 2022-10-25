@@ -1,8 +1,18 @@
 # CardGameAlpha
 
-## Initial Setup
+## Development
 
-### Gigalixir setup
+### Local Dev in Docker
+
+```
+docker compose up
+```
+
+Run the above and you should be able to access your local dev server at [http://localhost:4000](http://localhost:4000).
+
+## Operations
+
+### Gigalixir Initial setup
 
 Currently running on Dane's free tier Gigalixir account. Free setup was performed according to [the Gigalixir free tier instructions](https://gigalixir.readthedocs.io/en/latest/getting-started-guide.html#prerequisites).
 
@@ -43,13 +53,13 @@ Run the following `./scripts/gigalixir.sh ps` to get the current status of the c
 }
 ```
 
-## Local Dev in Docker
+### Gigalixir Deploy
 
 ```
-docker compose up
+git push gigalixir
 ```
 
-Run the above and you should be able to access your local dev server at [http://localhost:4000](http://localhost:4000).
+Push committed changes on `main` to Gigalixir for deployment.
 
 ## Standard Phoenix Instructions
 
