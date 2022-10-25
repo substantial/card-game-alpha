@@ -1,5 +1,9 @@
 # CardGameAlpha
 
+Have fun in a low-stakes party game where ethical design considerations are lurking at the end.
+
+This system is currently running at [https://card-game-alpha.gigalixirapp.com/](https://card-game-alpha.gigalixirapp.com/) on Gigalixir's free tier of hosting.
+
 ## Development
 
 ### Local Dev in Docker
@@ -59,7 +63,7 @@ Run the following `./scripts/gigalixir.sh ps` to get the current status of the c
 git push gigalixir
 ```
 
-Push committed changes on `main` to Gigalixir for deployment.
+Push committed changes on `main` to Gigalixir for deployment to [https://card-game-alpha.gigalixirapp.com/](https://card-game-alpha.gigalixirapp.com/). Watch the build information relayed after pushing to the `gigalixir` remote. After a successful push, you can use `./scripts/gigalixir.sh ps` to see the status of the system.
 
 ## Standard Phoenix Instructions
 
