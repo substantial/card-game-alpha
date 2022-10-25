@@ -43,6 +43,14 @@ Run the following `./scripts/gigalixir.sh ps` to get the current status of the c
 }
 ```
 
+## Local Dev in Docker
+
+```
+docker compose up
+```
+
+Run the above and you should be able to access your local dev server at [http://localhost:4000](http://localhost:4000).
+
 ## Standard Phoenix Instructions
 
 To start your Phoenix server:
