@@ -18,6 +18,31 @@ Add the Gigalixir remote git repository with the helper script that executes via
 ./scripts/gigalixir.sh git:remote card-game-alpha
 ```
 
+#### Confirm Gigalixir
+
+Run the following `./scripts/gigalixir.sh ps` to get the current status of the cloud system. It should look something like this:
+
+```
+{
+  "cloud": "gcp",
+  "pods": [
+    {
+      "lastState": {},
+      "name": "card-game-alpha-fdc78d7b5-8lflt",
+      "sha": "f6e5857323f8b2afa1fd5d1607024803f354b8c2",
+      "status": "Healthy",
+      "version": "1"
+    }
+  ],
+  "region": "v2018-us-central1",
+  "replicas_desired": 1,
+  "replicas_running": 1,
+  "size": 0.3,
+  "stack": "gigalixir-20",
+  "unique_name": "card-game-alpha"
+}
+```
+
 ## Standard Phoenix Instructions
 
 To start your Phoenix server:
