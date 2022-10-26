@@ -3,7 +3,7 @@
   <p>Party game for ethical design.</p>
 
   <%= if @current_user do %>
-    <%#= render CardGameAlphaWeb.GameView, "_form.html", assigns %>
+    <%= render CardGameAlphaWeb.GameView, "_form.html", assigns %>
   <% else %>
     <%= render CardGameAlphaWeb.SessionView, "_form.html", assigns %>
   <% end %>

@@ -1,4 +1,3 @@
-
 <%= if @current_user do %>
   <li><%= @current_user.name %></li>
   <li><%= link "Logout", to: Routes.session_path(@conn, :delete), method: :delete %></li>

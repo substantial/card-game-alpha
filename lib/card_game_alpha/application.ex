@@ -15,7 +15,9 @@ defmodule CardGameAlpha.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: CardGameAlpha.PubSub},
       # Start the Endpoint (http/https)
-      CardGameAlphaWeb.Endpoint
+      CardGameAlphaWeb.Endpoint,
+      # Start the Presence system
+      CardGameAlphaWeb.Presence
       # Start a worker by calling: CardGameAlpha.Worker.start_link(arg)
       # {CardGameAlpha.Worker, arg}
     ]
