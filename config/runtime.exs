@@ -48,7 +48,7 @@ if config_env() == :prod do
       You can generate one by calling: mix phx.gen.secret
       """
 
-  host = System.get_env("PHX_HOST") || "example.com"
+  host = System.get_env("APP_NAME") <> ".gigalixirapp.com"
   port = String.to_integer(System.get_env("PORT") || "4000")
 
   config :card_game_alpha, CardGameAlphaWeb.Endpoint,
