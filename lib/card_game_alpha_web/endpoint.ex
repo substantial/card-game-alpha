@@ -10,6 +10,10 @@ defmodule CardGameAlphaWeb.Endpoint do
     signing_salt: "vC2hw/1c"
   ]
 
+  socket "/socket", CardGameAlphaWeb.UserSocket,
+  websocket: true,
+  longpoll: false
+
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
 
   # Serve at "/" the static files from "priv/static" directory.
