@@ -3,7 +3,6 @@
 }
 
 .game-name {
-  // position: relative;
   display: inline-block;
 
   padding: 0 5px;
@@ -24,11 +23,11 @@
 
   flex-wrap: wrap;
   justify-self: center;
+}
 
-  .card {
-    width: calc(33% - 8px);
-    margin: 4px;
-  }
+.card {
+  width: calc(33% - 8px);
+  margin: 4px;
 }
 
 .deck-actions {
@@ -42,11 +41,11 @@
 
   flex-wrap: wrap;
   justify-self: center;
+}
 
-  .button {
-    width: calc(50% - 8px);
-    margin: 4px;
-  }
+.button {
+  width: calc(50% - 8px);
+  margin: 4px;
 }
 
 .votes-details,
@@ -60,50 +59,50 @@
   background-color: #fff;
   border-radius: 6px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
 
-  .player-status {
-    display: flex;
-    align-items: center;
+.player-status {
+  display: flex;
+  align-items: center;
 
-    padding: 8px 12px;
+  padding: 8px 12px;
 
-    border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #e5e7eb;
 
-    flex-direction: row;
+  flex-direction: row;
 
-    justify-self: center;
+  justify-self: center;
+}
 
-    &:first-child {
-      border-top-width: 0;
-    }
+.player-status:first-child {
+  border-top-width: 0;
+}
 
-    .vote-status {
-      display: inline-block;
+.vote-status {
+  display: inline-block;
 
-      width: 8px;
-      height: 8px;
-      margin-right: 8px;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
 
-      background-color: #bbb;
-      border-radius: 50%;
+  background-color: #bbb;
+  border-radius: 50%;
+}
 
-      &.red {
-        background-color: #f98080;
-      }
+.red {
+  background-color: #f98080;
+}
 
-      &.green {
-        background-color: #31c48d;
-      }
-    }
+.green {
+  background-color: #31c48d;
+}
 
-    .username {
-      flex: 1;
-    }
+.username {
+  flex: 1;
+}
 
-    .vote {
-      margin-left: 8px;
-    }
-  }
+.vote {
+  margin-left: 8px;
 }
 
 .votes-summary {
@@ -114,27 +113,27 @@
   gap: 16px;
   grid-gap: 16px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 
-  .stat {
-    padding: 8px;
-    margin: 0;
+.stat {
+  padding: 8px;
+  margin: 0;
 
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
 
-    &-name {
-      color: #6b7280;
+.stat-name {
+  color: #6b7280;
 
-      font-size: 14px;
-      font-weight: 500;
-    }
+  font-size: 14px;
+  font-weight: 500;
+}
 
-    &-value {
-      margin: 0;
+.stat-value {
+  margin: 0;
 
-      font-style: 30px;
-      font-weight: 600;
-    }
-  }
+  font-style: 30px;
+  font-weight: 600;
 }
