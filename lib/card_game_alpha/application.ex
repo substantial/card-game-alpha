@@ -10,6 +10,8 @@ defmodule CardGameAlpha.Application do
     children = [
       # Start the Ecto repository
       CardGameAlpha.Repo,
+      # Start the GameStore Agent
+      CardGameAlphaWeb.GameStore,
       # Start the Telemetry supervisor
       CardGameAlphaWeb.Telemetry,
       # Start the PubSub system

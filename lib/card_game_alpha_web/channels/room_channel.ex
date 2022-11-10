@@ -1,5 +1,6 @@
 defmodule CardGameAlphaWeb.RoomChannel do
   use CardGameAlphaWeb, :channel
+  alias CardGameAlphaWeb.{GameStore}
 
   @impl true
   def join("room:lobby", payload, socket) do
@@ -21,6 +22,7 @@ defmodule CardGameAlphaWeb.RoomChannel do
   # broadcast to everyone in the current topic (room:lobby).
   @impl true
   def handle_in("shout", payload, socket) do
+    GameStore.shout(payload)
     broadcast(socket, "shout", payload)
     {:noreply, socket}
   end

@@ -7,6 +7,7 @@ defmodule CardGameAlpha.MixProject do
       version: "0.1.0",
       elixir: "~> 1.11",
       elixirc_paths: elixirc_paths(Mix.env()),
+      elixirc_options: [debug_info: Mix.env() == :dev],
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
